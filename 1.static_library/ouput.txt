@@ -1,0 +1,646 @@
+* ar -t mylib.a :
+    _abs.o
+    _isalpha.o
+    _isdigit.o
+    _islower.o
+    _isupper.o
+    _memcpy.o
+    _memset.o
+    _puts.o
+    _strcat.o
+    _strchr.o
+    _strcmp.o
+    _strcpy.o
+    _strlen.o
+    _strncat.o
+    _strncpy.o
+    _strpbrk.o
+    _strspn.o
+
+
+
+* nm mylib.a
+
+    _abs.o:
+    0000000000001149 T _abs
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    0000000000001090 t deregister_tm_clones
+    0000000000001100 t __do_global_dtors_aux
+    0000000000003dc0 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc8 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001218 T _fini
+    0000000000001140 t frame_dummy
+    0000000000003db8 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb8 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002008 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003dc0 d __init_array_end
+    0000000000003db8 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001210 T __libc_csu_fini
+    00000000000011a0 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    0000000000001166 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010c0 t register_tm_clones
+    0000000000001060 T _start
+    0000000000004010 D __TMC_END__
+
+    _isalpha.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    0000000000001090 t deregister_tm_clones
+    0000000000001100 t __do_global_dtors_aux
+    0000000000003dc0 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc8 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001238 T _fini
+    0000000000001140 t frame_dummy
+    0000000000003db8 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb8 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002008 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003dc0 d __init_array_end
+    0000000000003db8 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+    0000000000001149 T _isalpha
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001230 T __libc_csu_fini
+    00000000000011c0 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    0000000000001181 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010c0 t register_tm_clones
+    0000000000001060 T _start
+    0000000000004010 D __TMC_END__
+
+    _isdigit.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    0000000000001090 t deregister_tm_clones
+    0000000000001100 t __do_global_dtors_aux
+    0000000000003dc0 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc8 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001228 T _fini
+    0000000000001140 t frame_dummy
+    0000000000003db8 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb8 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002008 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003dc0 d __init_array_end
+    0000000000003db8 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+    0000000000001149 T _isdigit
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001220 T __libc_csu_fini
+    00000000000011b0 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    000000000000116e T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010c0 t register_tm_clones
+    0000000000001060 T _start
+    0000000000004010 D __TMC_END__
+
+    _islower.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    0000000000001090 t deregister_tm_clones
+    0000000000001100 t __do_global_dtors_aux
+    0000000000003dc0 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc8 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001228 T _fini
+    0000000000001140 t frame_dummy
+    0000000000003db8 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb8 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002008 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003dc0 d __init_array_end
+    0000000000003db8 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+    0000000000001149 T _islower
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001220 T __libc_csu_fini
+    00000000000011b0 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    000000000000116e T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010c0 t register_tm_clones
+    0000000000001060 T _start
+    0000000000004010 D __TMC_END__
+
+    _isupper.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    0000000000001090 t deregister_tm_clones
+    0000000000001100 t __do_global_dtors_aux
+    0000000000003dc0 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc8 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001218 T _fini
+    0000000000001140 t frame_dummy
+    0000000000003db8 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb8 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002008 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003dc0 d __init_array_end
+    0000000000003db8 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+    0000000000001149 T _isupper
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001210 T __libc_csu_fini
+    00000000000011a0 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    000000000000116e T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010c0 t register_tm_clones
+    0000000000001060 T _start
+    0000000000004010 D __TMC_END__
+
+    _memcpy.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    00000000000012b8 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002174 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002004 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    00000000000012b0 T __libc_csu_fini
+    0000000000001240 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011b6 T main
+    0000000000001169 T _memcpy
+                    U puts@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000004010 D __TMC_END__
+
+    _memset.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001298 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002174 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002004 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001290 T __libc_csu_fini
+    0000000000001220 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011ab T main
+    0000000000001169 T _memset
+                    U puts@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000004010 D __TMC_END__
+
+    _puts.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001288 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001280 T __libc_csu_fini
+    0000000000001210 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011a0 T main
+                    U printf@@GLIBC_2.2.5
+    0000000000001169 T _puts
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000004010 D __TMC_END__
+
+    _strcat.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001308 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001300 T __libc_csu_fini
+    0000000000001290 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011f7 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strcat
+    0000000000004010 D __TMC_END__
+
+    _strchr.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001298 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001290 T __libc_csu_fini
+    0000000000001220 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011a7 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strchr
+    0000000000004010 D __TMC_END__
+
+    _strcmp.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    00000000000012f8 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002008 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    00000000000012f0 T __libc_csu_fini
+    0000000000001280 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011ec T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strcmp
+    0000000000004010 D __TMC_END__
+
+    _strcpy.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001308 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001300 T __libc_csu_fini
+    0000000000001290 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011d5 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strcpy
+    0000000000004010 D __TMC_END__
+
+    _strlen.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001298 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    000000000000217c r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    000000000000200c r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001290 T __libc_csu_fini
+    0000000000001220 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    000000000000119b T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strlen
+    0000000000004010 D __TMC_END__
+
+    _strncat.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001308 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001300 T __libc_csu_fini
+    0000000000001290 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011f5 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strncat
+    0000000000004010 D __TMC_END__
+
+    _strncpy.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    00000000000012f8 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    00000000000012f0 T __libc_csu_fini
+    0000000000001280 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011e9 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strncpy
+    0000000000004010 D __TMC_END__
+
+    _strpbrk.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    00000000000012e8 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    00000000000012e0 T __libc_csu_fini
+    0000000000001270 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    00000000000011e0 T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strpbrk
+    0000000000004010 D __TMC_END__
+
+    _strspn.o:
+    0000000000004010 B __bss_start
+    0000000000004010 b completed.8060
+                    w __cxa_finalize@@GLIBC_2.2.5
+    0000000000004000 D __data_start
+    0000000000004000 W data_start
+    00000000000010b0 t deregister_tm_clones
+    0000000000001120 t __do_global_dtors_aux
+    0000000000003db8 d __do_global_dtors_aux_fini_array_entry
+    0000000000004008 D __dso_handle
+    0000000000003dc0 d _DYNAMIC
+    0000000000004010 D _edata
+    0000000000004018 B _end
+    0000000000001318 T _fini
+    0000000000001160 t frame_dummy
+    0000000000003db0 d __frame_dummy_init_array_entry
+    0000000000002184 r __FRAME_END__
+    0000000000003fb0 d _GLOBAL_OFFSET_TABLE_
+                    w __gmon_start__
+    0000000000002010 r __GNU_EH_FRAME_HDR
+    0000000000001000 t _init
+    0000000000003db8 d __init_array_end
+    0000000000003db0 d __init_array_start
+    0000000000002000 R _IO_stdin_used
+                    w _ITM_deregisterTMCloneTable
+                    w _ITM_registerTMCloneTable
+    0000000000001310 T __libc_csu_fini
+    00000000000012a0 T __libc_csu_init
+                    U __libc_start_main@@GLIBC_2.2.5
+    000000000000120d T main
+                    U printf@@GLIBC_2.2.5
+    00000000000010e0 t register_tm_clones
+                    U __stack_chk_fail@@GLIBC_2.4
+    0000000000001080 T _start
+    0000000000001169 T _strspn
+    0000000000004010 D __TMC_END__
